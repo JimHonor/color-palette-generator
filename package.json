@@ -1,0 +1,29 @@
+{
+  "name": "color-palette-generator",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "homepage": "./",
+  "scripts": {
+    "dev": "vite --open",
+    "build": "vite build",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "init": "npm install && code .",
+    "init-git": "git init -b main && git add . && git commit -m 'init'"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@emotion/babel-plugin": "^11.10.5",
+    "@types/react": "^18.0.24",
+    "@types/react-dom": "^18.0.8",
+    "@vitejs/plugin-react": "^2.2.0",
+    "gh-pages": "^4.0.0",
+    "vite": "^3.2.3"
+  }
+}
